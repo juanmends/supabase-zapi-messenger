@@ -1,0 +1,15 @@
+#Ambiente e .env
+.env
+.venv
+venv
+
+#cache
+__pycache__/
+*.pyc
+
+#IDE
+.vscode/
+.idea/
+
+#sistema
+.DS_Store
