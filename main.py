@@ -1,5 +1,6 @@
 from src.config import Settings
-import requests, logging
+from src.contacts import buscar_contato
+import logging
 
 logging.basicConfig(
     level=logging.INFO,
@@ -7,3 +8,8 @@ logging.basicConfig(
 )
 
 settings = Settings.le_env()
+
+contatos = buscar_contato(settings=settings)
+
+for contato in contatos:
+    print(contato["name"], contato["number"])
