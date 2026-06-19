@@ -10,12 +10,9 @@ No Supabase, crie a tabela "users" com as colunas "id", "name" e "number", quand
 
 obs: id é um int8, name e number são text. 
  
-Insira os contatos de teste. O número deve estar no formato internacional (DDI + DDD + número), por exemplo 5521999999999
+Insira os contatos de teste, o número deve estar no formato internacional (DDI + DDD + número).
  
-exemplos de usuarios:
-    ("Fulano", "5521999999999"),
-    ("Ciclano", "5521988888888"),
-    ("Beltrano", "5521977777777");
+exemplo de instância: (1, "juan", "5521999999999")
  
 O Supabase ativa o Row Level Security (RLS) por padrão. Para que o script consiga ler a tabela, crie uma policy de leitura (SELECT) para "users" ou use a chave "service_role" no .env
 
